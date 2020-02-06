@@ -1,0 +1,35 @@
+﻿A Priori Analysis − This is a theoretical analysis of an algorithm. Efficiency of an algorithm is measured by assuming that all other factors, 
+for example, processor speed, are constant and have no effect on the implementation. Not dependent on hardware.
+
+A Posterior Analysis − This is an empirical analysis of an algorithm. The selected algorithm is implemented using programming language. This is then executed on target computer machine. In this analysis, 
+actual statistics like running time and space required, are collected.Hardware dependent.Language depedent
+
+Characteristics of Algorithm: Input, output,definteness(Every state meaningful),finiteness(Has some end),effective ness (Must have some objective)
+
+Analyze of Algorithm: Time,Space(Memory consumtion),Network Data Transfer,Power Consumption,CPU Registered consumption
+
+Time Factor − Time is measured by counting the number of key operations such as comparisons in the sorting algorithm.
+
+Space Factor − Space is measured by counting the maximum memory space required by the algorithm.
+
+O(1)=> Indicate time complexity is constant
+O(n)=>Indicate linear function
+O(n^2)=>Quadratic
+O(n^3)=>Cubic
+O(logn)=>Lograthimic
+O(2^n)=>Exponential
+
+1<logn<root n<n<nlogn<n^2<n3<..<2^n<3^n<..<n^n
+
+Asymptotic Notations:  Asymptotic analysis of an algorithm refers to defining the mathematical boundation/framing of its run-time performance. Using asymptotic analysis, 
+we can very well conclude the best case, average case, and worst case scenario of an algorithm.
+Best Case − Minimum time required for program execution.
+Average Case − Average time required for program execution.
+Worst Case − Maximum time required for program execution.
+
+Asymptotic Notations
+Following are the commonly used asymptotic notations to calculate the running time complexity of an algorithm.
+
+Ο Notation =>Big -oh (Upper boound) =>Ο(f(n)) = { g(n) : there exists c > 0 and n0 such that f(n) ≤ c.g(n) for all n > n0. } Always try to write closest function.
+Ω Notation => Big-Omega (Lower bound) Ω(f(n)) ≥ { g(n) : there exists c > 0 and n0 such that g(n) ≤ c.f(n) for all n > n0. }
+θ Notation => Theta( Average bound)=>θ(f(n)) = { g(n) if and only if g(n) =  Ο(f(n)) and g(n) = Ω(f(n)) for all n > n0. }
